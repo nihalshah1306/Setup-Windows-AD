@@ -1,0 +1,7 @@
+---
+  - name: Apply Roles to Install AD
+    hosts: windows
+    roles:
+      - win_ad_install
+...
+

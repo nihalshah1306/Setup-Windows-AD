@@ -1,0 +1,11 @@
+---
+  - name: Create Users
+    win_domain_user:
+      name: "{{ item.name }}"
+      firstname: "{{ item.name }}"
+      lastname: "{{ item.lastname }}"
+      email: "{{ item.email }}"
+      password: "{{ item.password }}"
+    with_items: "{{ user_info }}"
+...
+
